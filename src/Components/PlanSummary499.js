@@ -24,7 +24,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function PlanSummary399() {
+export default function PlanSummary499() {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -51,7 +51,7 @@ export default function PlanSummary399() {
         <Typography variant="body2" color="text.secondary">
           Infinity Singular Plan
           <br></br>
-          40 GB Data Monthly
+          75 GB Data Monthly
           <br></br>
           Local/STD/ Roaming Calls Unlimited
           <br></br>
@@ -65,7 +65,7 @@ export default function PlanSummary399() {
         <SingleLineImageList/>
         <p>
           Total (Excl GST)  
-                ₹399
+                ₹499
           </p>
       </CardContent>
       <CardActions disableSpacing>
