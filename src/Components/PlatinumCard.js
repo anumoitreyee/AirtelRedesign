@@ -7,15 +7,15 @@ import PlatinumButton from './PlatinumButton';
 
 export default function PlatinumCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardActionArea>
         
         <CardContent>
         <br></br><br></br><br></br>
-          <Typography  variant="body2" color="text.secondary">
+          <Typography gutterBottom variant="h5" component="div">
            <center> Try out Airtel Thanks PlatinumCard </center>
           </Typography>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography variant="body2" color="text.secondary">
           To get amazing rewards
           </Typography>
           <PlatinumButton/>

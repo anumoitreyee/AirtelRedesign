@@ -7,7 +7,7 @@ import ContainedButtons from './Button';
 
 export default function AirtelPostpaidCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardActionArea>
         
         <CardContent>

@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import ContainedButtons from './Button';
 
+// eslint-disable-next-line no-unused-vars
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -25,7 +26,7 @@ const useStyles = makeStyles({
 });
 export default function AirtelPrepaidCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardActionArea>
         
         <CardContent>

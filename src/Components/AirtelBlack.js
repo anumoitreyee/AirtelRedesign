@@ -5,11 +5,11 @@ import AirtelBlackSmall from './../Assets/AirtelBlackSmall.jpg';
 import Typography from '@mui/material/Typography';
 import {  CardActionArea } from '@mui/material';
 import AirtelBlackButton from './AirtelBlackButton';
-
+import AirtelBlack from './../Assets/AirtelBlack.jpg';
 
 export default function AirtelBlackCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardActionArea>
         
         <CardContent>
@@ -22,7 +22,7 @@ export default function AirtelBlackCard() {
           Enjoy first 30 days free of a new service with Airtel Black
           </Typography>
           <AirtelBlackButton/>
-          
+          <img src={AirtelBlack} alt="airtelblack" />
           <br></br><br></br><br></br><br></br><br></br>
         </CardContent>
       </CardActionArea>

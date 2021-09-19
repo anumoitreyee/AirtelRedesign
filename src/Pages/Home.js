@@ -27,6 +27,7 @@ export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
+          <center>
           <img src={vector} alt="vector" height="220px" width="370px" />
 
         
@@ -67,6 +68,7 @@ export default function Home() {
         </p> 
       
         </footer>
+        </center>
         </Container>         
     </React.Fragment>
   );
