@@ -18,35 +18,28 @@ export default function Address() {
       <div>
           <SelectTextFields/>
         <TextField
-          Mobile Number
+          Address Line
           id="outlined-required"
-          label="Mobile number"
-          defaultValue="8357654312"
+          label="Address Line"
+          defaultValue="Enter your Address"
         />
         <br></br>
         <TextField
-          id="outlined-password-input"
-          label="OTP"
-          type="password"
-          autoComplete="current-password"
+          HouseFlat Number
+          id="outlined-required"
+          label="House/Flat Number"
+          defaultValue="Enter your Flat Number"
         />
-        <br></br>
+       <br></br>
         <TextField
           id="outlined-read-only-input"
-          label="Email ID"
-          defaultValue="deven.korde23@gmail.com"
+          label="Pin Code"
+          defaultValue="Enter your Pin"
           InputProps={{
             readOnly: true,
           }}
         />
-        <br></br>
-        <TextField
-          Mobile Number
-          id="outlined-required"
-          label="Alternate Mobile number"
-          defaultValue="Enter your alternate mobile number"
-       />
-       <br></br>
+        
        
         
       </div>
