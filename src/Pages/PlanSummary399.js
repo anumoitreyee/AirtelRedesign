@@ -1,6 +1,8 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-
+import PlanSummary from '../Components/PlanSummary399';
+import PersonalDetails from '../Components/PersonalDetails';
+import Address from '../Components/Address';
 
 
 
@@ -11,7 +13,14 @@ export default function PlanSummary399() {
     <React.Fragment>
         <Container fixed>
             <center>
-         <PlanSummary399/> 
+         <PlanSummary/> 
+<p>Personal Details</p>
+<br></br>
+<PersonalDetails/>
+<p>Address</p>
+<Address/>
+
+
 
 
 
