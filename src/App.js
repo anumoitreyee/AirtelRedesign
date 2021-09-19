@@ -23,10 +23,10 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/home'} > <Home/> </Route>
             <Route path={process.env.PUBLIC_URL + '/gallery'}  > <Gallery/> </Route>
             <Route path={process.env.PUBLIC_URL + '/PostpaidOptions'}  > <PostpaidOptions/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/PlanSummary399'}  > <PlanSummary399/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/PlanSummary499'}  > <PlanSummary499/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/PlanSummary999'}  > <PlanSummary999/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/PlanSummary1599'}  > <PlanSummary1599/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/PlanSummary1'}  > <PlanSummary399/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/PlanSummary2'}  > <PlanSummary499/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/PlanSummary3'}  > <PlanSummary999/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/PlanSummary4'}  > <PlanSummary1599/> </Route>
 
           </Switch>
 

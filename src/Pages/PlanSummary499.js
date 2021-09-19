@@ -9,7 +9,7 @@ import ConfirmButton from '../Components/ConfirmButton';
 
 
 
-export default function PlanSummary() {
+export default function PlanSummary2() {
   return (
     <React.Fragment>
         <Container fixed>
