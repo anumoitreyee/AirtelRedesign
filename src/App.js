@@ -1,16 +1,16 @@
 import './App.css';
-import ButtonAppBar from './Components/AppBar.js'
+import MenuAppBar from './Components/AppBar.js'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home.js'
 import Gallery from './Pages/Gallery.js'
-
+import PostpaidOptions from './Pages/PostpaidOptionsPage'
 
 function App() {
   return (
     <div className="App">
       {/* Header (Navigation Bar) */}
       <header className="App-header">
-      <ButtonAppBar/>
+      <MenuAppBar/>
       </header>
       
       {/* Router - Pages */}
@@ -18,11 +18,10 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/'} exact > <Home/> </Route>
             <Route path={process.env.PUBLIC_URL + '/home'} > <Home/> </Route>
             <Route path={process.env.PUBLIC_URL + '/gallery'}  > <Gallery/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/PostpaidOptions'}  > <PostpaidOptions/> </Route>
           </Switch>
 
-      <footer className="App-footer">
-        This is a footer
-      </footer>
+      
     </div>
   );
   }

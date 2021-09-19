@@ -3,9 +3,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { CardActionArea } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import ContainedButtons from './Button';
+import PlatinumButton from './PlatinumButton';
 
-export default function AirtelPostpaidCard() {
+export default function PlatinumCard() {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -13,12 +13,12 @@ export default function AirtelPostpaidCard() {
         <CardContent>
         <br></br><br></br><br></br>
           <Typography  variant="body2" color="text.secondary">
-           <center> Airtel Unlimited Postpaid </center>
+           <center> Try out Airtel Thanks PlatinumCard </center>
           </Typography>
           <Typography gutterBottom variant="h5" component="div">
-          Airtel Postpaid starting at ₹499
+          To get amazing rewards
           </Typography>
-          <ContainedButtons/>
+          <PlatinumButton/>
         </CardContent>
       </CardActionArea>
       

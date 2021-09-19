@@ -16,7 +16,7 @@ export default function ContainedButtons() {
   return (
     <div className={classes.root}>
     
-      <Button variant="Recharge" color="primary" align="center">
+      <Button variant="contained" color="primary" align="center">
         View Plans
       </Button>
       
