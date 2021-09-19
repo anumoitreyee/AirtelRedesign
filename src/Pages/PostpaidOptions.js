@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import PlatinumCard from '../Components/PlatinumCard';
-
+import Card399 from '../Components/Card399'; 
 
 
 
@@ -17,7 +17,7 @@ export default function PostpaidOptions() {
          <p>
            Explore our Best Plans
          </p>
-        
+        <Card399/>
 
 
 
