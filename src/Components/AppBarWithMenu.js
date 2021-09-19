@@ -1,5 +1,5 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
+import { AppBar } from '@mui/material';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -9,7 +9,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import image from './../Assets/LogoAirtel.jpg';
+import LogoAirtel from './../Assets/LogoAirtel.jpg';
+
 
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
@@ -28,24 +29,24 @@ export default function MenuAppBar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 2 }}>
       <FormGroup>
         
-         
       </FormGroup>
-      <AppBar position="static" color="default">
+      <AppBar position="relative">
         <Toolbar>
           <IconButton
             size="large"
             edge="start"
-            color="inherit"
+            color="default"
             aria-label="menu"
             sx={{ mr: 2 }}
           >
             <MenuIcon />
           </IconButton>
+          
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <img src={image} alt={image} height="70px" width="200px"/>
+          <img src="LogoAirtel" alt="airtellogo"  />
           </Typography>
           {auth && (
             <div>
