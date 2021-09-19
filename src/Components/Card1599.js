@@ -12,7 +12,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import RadioButtons from './RadioButton';
-import Carousel399 from './Carousel399';
+import Carousel499 from './Carousel499';
 import WifiIcon from '@mui/icons-material/Wifi';
 import PhoneIcon from '@mui/icons-material/Phone';
 import InsertCommentRoundedIcon from '@mui/icons-material/InsertCommentRounded';
@@ -28,7 +28,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function Card399() {
+export default function Card1599() {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -46,18 +46,18 @@ export default function Card399() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="₹399"
+        title="₹1599"
         subheader="Monthly Rental"
       />
       
-      <Carousel399/>
+      <Carousel499/>
       <CardContent>
       <RadioButtons/>
       <WifiIcon/>
       <PhoneIcon/>
       <InsertCommentRoundedIcon/>
         <Typography variant="body2" color="text.secondary">
-         40 GB Per Month With Data Rollover
+         Unlimited Data Per Month With Data Rollover
          <br></br>
          Unlimited Calls
          <br></br>

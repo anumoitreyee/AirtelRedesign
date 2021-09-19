@@ -20,7 +20,7 @@ export default function RadioButtons() {
   return (
     <div>
       
-      <Radio {...controlProps('d')} color="default" />
+      
       <Radio
         {...controlProps('e')}
         sx={{
