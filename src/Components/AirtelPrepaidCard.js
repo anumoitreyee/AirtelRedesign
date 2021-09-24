@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import ContainedButtons from './Button';
-
+import {Link, Router} from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 const useStyles = makeStyles({
   root: {
@@ -27,8 +27,8 @@ const useStyles = makeStyles({
 export default function AirtelPrepaidCard() {
   return (
     <Card>
-      <CardActionArea>
-        
+      <CardActionArea href="https://anumoitreyee.github.io/AirtelRedesign/PostpaidOptions">
+      <Link to={process.env.PUBLIC_URL + '/PostpaidOptions'}>
         <CardContent>
           <br></br><br></br><br></br>
           <Typography variant="body2" color="text.secondary">
@@ -41,6 +41,7 @@ export default function AirtelPrepaidCard() {
           <ContainedButtons/>
           <br></br><br></br><br></br>
         </CardContent>
+        </Link>
       </CardActionArea>
       
     </Card>

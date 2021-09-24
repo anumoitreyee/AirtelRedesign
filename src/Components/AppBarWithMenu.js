@@ -10,6 +10,8 @@ import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import LogoAirtel from './../Assets/LogoAirtel.jpg';
+import MultiSelectTreeView from './TreeView';
+import MenuDrawer from './Drawer';
 
 
 export default function MenuAppBar() {
@@ -42,6 +44,7 @@ export default function MenuAppBar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
+            <MenuDrawer/>
             <MenuIcon />
           </IconButton>
           
