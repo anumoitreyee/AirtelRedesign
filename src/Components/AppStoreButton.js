@@ -16,7 +16,7 @@ export default function AppStoreButton() {
   return (
     <div className={classes.root}>
     
-      <Button variant="contained" color="primary">
+      <Button variant="contained" color="primary" href="https://apps.apple.com/in/app/airtel-thanks-recharge-upi/id543184334">
         Download on the App Store
       </Button>
       

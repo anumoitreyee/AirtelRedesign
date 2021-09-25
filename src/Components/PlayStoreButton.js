@@ -16,7 +16,7 @@ export default function PlayStoreButton() {
   return (
     <div className={classes.root}>
     
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" href="https://play.google.com/store/apps/details?id=com.myairtelapp&hl=en_IN&gl=US">
         Get it on Google Play
       </Button>
       

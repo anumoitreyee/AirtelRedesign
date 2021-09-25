@@ -65,7 +65,7 @@ export default function FullWidthTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Prepaid" {...a11yProps(0)} />
+          <Tab label="Prepaid" {...a11yProps(0)}/>
           <Tab label="Postpaid" {...a11yProps(1)} />
           <Tab label="DTH" {...a11yProps(2)} />
           <Tab label="Broadband" {...a11yProps(3)} />

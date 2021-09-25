@@ -6,7 +6,7 @@ export default function FooterButton2() {
   return (
     <Stack direction="row" >
       
-      <Button>Cookie Notice</Button>
+      <Button style={{color:'white'}}>Cookie Notice</Button>
      
     </Stack>
   );

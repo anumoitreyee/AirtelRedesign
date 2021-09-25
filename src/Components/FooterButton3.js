@@ -6,7 +6,7 @@ export default function FooterButton3() {
   return (
     <Stack direction="row" >
       
-      <Button>DLT Registration</Button>
+      <Button style={{color:'white'}}>DLT Registration</Button>
       
     </Stack>
   );

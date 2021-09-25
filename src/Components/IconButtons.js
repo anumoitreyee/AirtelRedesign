@@ -9,7 +9,10 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
-      margin: theme.spacing(1),
+      [theme.breakpoints.up('md')]: {
+
+      margin: theme.spacing(11),
+      },
     },
   },
 }));

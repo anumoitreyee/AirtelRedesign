@@ -6,7 +6,7 @@ export default function FooterButton1() {
   return (
     <Stack direction="row" >
       
-      <Button>Privacy Policy</Button>
+      <Button style={{color:'white'}}>Privacy Policy</Button>
       
     </Stack>
   );

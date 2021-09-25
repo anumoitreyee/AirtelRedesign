@@ -18,7 +18,6 @@ import FooterButton2 from '../Components/FooterButton2';
 import FooterButton3 from '../Components/FooterButton3';
 import FooterButton4 from '../Components/FooterButton4';
 import CarouselStepper from '../Components/CarouselStepper';
-import { Grid } from '@mui/material';
 
 
 
@@ -26,7 +25,7 @@ import { Grid } from '@mui/material';
 export default function Home() {
   return (
     <React.Fragment>
-        <Container fixed>
+        <Container>
           <center>
           <img src={vector} alt="vector" height="220px" width="370px" />
 
@@ -56,7 +55,14 @@ export default function Home() {
         
         
         <footer className="App-footer">   
+        <Container style={{flex:1,
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:'center',}}
+    
+    >
         <IconButtons/> 
+       
         <FooterButton/>
         <FooterButton1/>
         <FooterButton2/>
@@ -66,7 +72,7 @@ export default function Home() {
         <p>
         <CopyrightIcon/> 2021 Airtel India. All Rights Reserved.
         </p> 
-      
+      </Container>
         </footer>
         </center>
         </Container>         

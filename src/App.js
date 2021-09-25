@@ -9,6 +9,7 @@ import PlanSummary499 from './Pages/PlanSummary499';
 import PlanSummary999 from './Pages/PlanSummary999';
 import PlanSummary1599 from './Pages/PlanSummary1599';
 import ThankYou from './Pages/ThankYou';
+import SignIn from './Pages/SignIn';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/PlanSummary999'}  > <PlanSummary999/> </Route>
             <Route path={process.env.PUBLIC_URL + '/PlanSummary1599'}  > <PlanSummary1599/> </Route>
             <Route path={process.env.PUBLIC_URL + '/ThankYou'}  > <ThankYou/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/SignIn'}  > <SignIn/> </Route>
 
           </Switch>
 

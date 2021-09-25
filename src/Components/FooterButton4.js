@@ -6,7 +6,7 @@ export default function FooterButton4() {
   return (
     <Stack direction="row" >
       
-      <Button>Contact Us</Button>
+      <Button style={{color:'white'}}>Contact Us</Button>
     </Stack>
   );
 }
