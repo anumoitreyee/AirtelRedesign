@@ -80,7 +80,7 @@ export default function SingleLineImageList() {
 
   return (
     <div className={classes.root}>
-      <ImageList className={classes.imageList} cols={2.5}>
+      <ImageList className={classes.imageList} cols={2.5} rowHeight="400">
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img src={item.img} alt={item.title} />
