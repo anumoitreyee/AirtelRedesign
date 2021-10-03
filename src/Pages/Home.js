@@ -48,19 +48,15 @@ export default function Home() {
           <AirtelThanksCard/>
          
          <TextButton/>
-        
+         </center>
+         </Container> 
          
           
          
         
         
         <footer className="App-footer">   
-        <Container style={{flex:1,
-    flexDirection:'row',
-    alignItems:'center',
-    justifyContent:'center',}}
-    
-    >
+        
         <IconButtons/> 
        
         <FooterButton/>
@@ -72,10 +68,9 @@ export default function Home() {
         <p>
         <CopyrightIcon/> 2021 Airtel India. All Rights Reserved.
         </p> 
-      </Container>
+      
         </footer>
-        </center>
-        </Container>         
+                
     </React.Fragment>
   );
 }

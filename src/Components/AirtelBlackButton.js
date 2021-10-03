@@ -16,7 +16,7 @@ export default function AirtelBlackButton() {
   return (
     <div className={classes.root}>
     
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" style={{backgroundColor:"red"}}>
         Explore Airtel Black
       </Button>
       

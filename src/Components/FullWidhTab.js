@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import RechargeTextFields from './RechargeTextField';
 import RechargeButtons from './RechargeButton';
+import RechargeRow from './RechargeRow';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -77,16 +78,16 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-        <RechargeTextFields/><RechargeButtons/>
+        <RechargeRow/>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-        <RechargeTextFields/><RechargeButtons/>
+        <RechargeRow/>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-        <RechargeTextFields/><RechargeButtons/>
+        <RechargeRow/>
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-        <RechargeTextFields/><RechargeButtons/>
+        <RechargeRow/>
         </TabPanel>
       </SwipeableViews>
     </Box>

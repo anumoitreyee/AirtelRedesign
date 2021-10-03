@@ -14,7 +14,7 @@ import LeftButton from './LeftButton';
 import { pink } from '@mui/material/colors';
 import SvgIcon from '@mui/material/SvgIcon';
 import TemporaryDrawer from './Drawer';
-
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
@@ -39,7 +39,7 @@ export default function MenuAppBar() {
         
          
       </FormGroup>
-      <AppBar position="static" color="default">
+      <AppBar position="fixed" color="default">
         <Toolbar>
         <IconButton
             size="large"
@@ -65,8 +65,9 @@ export default function MenuAppBar() {
                 aria-haspopup="true"
                 onClick={handleMenu}
                 color="inherit"
+                fontSize="large"
               >
-                <AccountCircle sx={{ color: pink[700] }}/>
+                <PersonOutlineIcon sx={{ color: pink[700] }}  fontSize="large"/>
               </IconButton>
               
             </div>
