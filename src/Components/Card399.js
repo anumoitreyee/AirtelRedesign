@@ -16,6 +16,7 @@ import Carousel399 from './Carousel399';
 import WifiIcon from '@mui/icons-material/Wifi';
 import PhoneIcon from '@mui/icons-material/Phone';
 import InsertCommentRoundedIcon from '@mui/icons-material/InsertCommentRounded';
+import { makeStyles } from '@material-ui/core/styles';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -28,6 +29,43 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: 1200,
+    flexGrow: 1,
+  },
+  header: {
+    display: 'flex',
+    alignItems: 'center',
+    height: 0,
+    paddingLeft: theme.spacing(4),
+    backgroundColor: theme.palette.background.default,
+  },
+  img: {
+    height: '100%',
+    display: 'block',
+    maxWidth: 1200,
+    overflow: 'hidden',
+    width: '100%',
+  },
+
+
+  
+  
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+
+}));
+
 export default function Card399() {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -36,7 +74,7 @@ export default function Card399() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 1200 }}>
       <CardHeader
       
         
@@ -58,11 +96,11 @@ export default function Card399() {
       <InsertCommentRoundedIcon/>
         <Typography variant="body2" color="text.secondary">
          40 GB Per Month With Data Rollover
-         <br></br>
+         
          Unlimited Calls
-         <br></br>
+         
          100 SMS everyday
-         <br></br>
+         
          #airtelThanksRewards
          
         </Typography>

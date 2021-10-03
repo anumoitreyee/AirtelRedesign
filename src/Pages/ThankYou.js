@@ -16,12 +16,12 @@ export default function ThankYou() {
           
           <img src={done} alt="done" />
           <p> Your Request has been created.</p>
-           <br></br>
+           
            <p>Keep Documents Ready</p>
-           <br></br>
+           
            <p>Expect a Call.
            </p>    
-         <br></br>
+         
          <ViewMore/>
 
 

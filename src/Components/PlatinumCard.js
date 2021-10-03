@@ -11,7 +11,7 @@ export default function PlatinumCard() {
       <CardActionArea>
         
         <CardContent>
-        <br></br><br></br><br></br>
+       
           <Typography gutterBottom variant="h5" component="div">
            <center> Try out Airtel Thanks PlatinumCard </center>
           </Typography>

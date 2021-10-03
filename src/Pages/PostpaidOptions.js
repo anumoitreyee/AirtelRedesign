@@ -16,19 +16,19 @@ export default function PostpaidOptions() {
     <React.Fragment>
         <Container fixed>
           <center>
-          <br></br>
+          
          <PlatinumCard/>
          <p>
            Explore our Best Plans
          </p>
         <Card399/>
-        <br></br>
+        
         <Card499/>
-        <br></br>
+        
         <Card999/>
-        <br></br>
+        
         <Card1599/>
-        <br></br>
+        
         <BuyNowButton/>
 
 

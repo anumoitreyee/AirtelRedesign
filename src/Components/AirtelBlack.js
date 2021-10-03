@@ -38,7 +38,7 @@ export default function AirtelBlackCard() {
       <CardActionArea>
         
         <CardContent>
-          <br></br><br></br><br></br><br></br><br></br>
+          
           <img src={AirtelBlackSmall} alt="airtel" />
           <Typography  variant="h2" color="white">
            <center> BLACK</center>
@@ -48,7 +48,7 @@ export default function AirtelBlackCard() {
           </Typography>
           <AirtelBlackButton/>
           <img src={AirtelBlack} alt="airtelblack" width="70%" height="70%"/>
-          <br></br><br></br><br></br><br></br><br></br>
+          
         </CardContent>
       </CardActionArea>
       
