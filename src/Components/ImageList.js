@@ -11,7 +11,7 @@ import image2 from './../Assets/rangbaaz.jpg';
 import image3 from './../Assets/rabindra.jpg';
 import image4 from './../Assets/mastani.jpg';
 import image5 from './../Assets/herapheri.jpg';
-import LokiHotstarCard from './LokiHotstarCard';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -37,10 +37,11 @@ const useStyles = makeStyles((theme) => ({
 
   
   const itemData = [
-    
-    <LokiHotstarCard/>
-    
-   
+    {
+      img1: image1,
+       title: 'Disney + Hotstar',
+      author: 'only ₹399',
+      },
   ];
   const itemData2 = [
     {

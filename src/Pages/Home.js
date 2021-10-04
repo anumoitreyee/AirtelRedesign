@@ -27,7 +27,7 @@ export default function Home() {
     <React.Fragment>
         <Container>
           <center>
-          <img src={vector} alt="vector" height="220px" width="370px" />
+          <img src={vector} alt="vector" height="100%" width="100%" />
 
         
             
