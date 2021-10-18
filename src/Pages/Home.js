@@ -18,7 +18,7 @@ import FooterButton2 from '../Components/FooterButton2';
 import FooterButton3 from '../Components/FooterButton3';
 import FooterButton4 from '../Components/FooterButton4';
 import CarouselStepper from '../Components/CarouselStepper';
-
+import { MdOutlineArrowUpward } from 'react-icons/md'
 
 
 

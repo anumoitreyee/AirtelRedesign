@@ -1,12 +1,28 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 function NavBar() {
+ const [click, setClick] = useState(false)
+
+ const handleClick = () => setClick(!click);
+
     return (
+        <>
         <div className="navbar">
-            <Link to="#" className='menu-bars'></Link>
-            
-        </div>
+           <div className="navbar-container container">
+           
+         <div className="menu-icon" onClick={handleClick}>
+         {click ? <FaTimes /> : <FaBars />}
+
+         
+    
+
+         </div>
+         
+           </div>
+           </div>
+           </>
     )
 }
 

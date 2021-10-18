@@ -4,21 +4,41 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 
 import FormGroup from '@mui/material/FormGroup';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
 import image from './../Assets/LogoAirtel.jpg';
-import LeftButton from './LeftButton';
 import { pink } from '@mui/material/colors';
-import SvgIcon from '@mui/material/SvgIcon';
-import TemporaryDrawer from './Drawer';
+
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import { Link } from 'react-router-dom'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import {useState} from 'react'
+import { Button1 } from './Button1';
+import './AppBar.css';
 
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false)
+
+  const showButton = () => {
+    if(window.innerWidth <= 960) {
+      setButton(false)
+    } else {
+      setButton(true)
+    }
+    
+  }
+
+  window.addEventListener('resize',
+  showButton);
+
+
+
 
   // eslint-disable-next-line no-unused-vars
   const handleChange = (event) => {
@@ -34,24 +54,74 @@ export default function MenuAppBar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 2 }}>
       <FormGroup>
         
          
       </FormGroup>
       <AppBar position="relative" color="default">
         <Toolbar>
-        <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            fontSize="large"
-            sx={{ color: pink[700] }}
-            
-          >
-            <TemporaryDrawer/>
-          </IconButton>
+        
+          <div className="menu-icon" onClick={handleClick} >
+         {click ? <FaTimes /> : <FaBars align="left"/>}</div>
+         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+           <li className="nav-item">
+            <Link to='/PREPAID' className="nav-links">
+            PREPAID
+            </Link>        
+        
+           </li>
+           <li className="nav-item">
+            <Link to='/DTH' className="nav-links">
+            DTH
+            </Link> 
+            </li>
+           <li className="nav-item">
+            <Link to='/POSTPAID' className="nav-links">
+            POSTPAID
+            </Link>                  
+
+          </li>
+           <li className="nav-item">
+            <Link to='/BROADBAND' className="nav-links">
+            BROADBAND
+            </Link>           
+            </li>
+            <li className="nav-item">
+            <Link to='/BANK' className="nav-links">
+            BANK
+            </Link>           
+            </li>
+            <li className="nav-item">
+            <Link to='/AIRTELBLANK' className="nav-links">
+            AIRTEL BLACK
+            </Link>           
+            </li>
+            <li className="nav-item">
+            <Link to='/HELP' className="nav-links">
+            HELP
+            </Link>           
+            </li>
+            <li className="nav-item">
+            <Link to='/XSTREAM' className="nav-links">
+            XSTREAM
+            </Link>           
+            </li>
+            <li className="nav-item">
+            <Link to='/SIGNIN' className="nav-links">
+            SIGN IN
+            </Link>           
+            </li>
+
+
+
+           </ul>
+
+
+
+
+
+
          
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             <img src={image} alt={image} height="70px" width="200px"/>

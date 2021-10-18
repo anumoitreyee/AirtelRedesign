@@ -8,6 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import RechargeTextFields from './RechargeTextField';
 import RechargeButtons from './RechargeButton';
+import InputAdornment from '@mui/material/InputAdornment';
 
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
@@ -30,10 +31,10 @@ export default function RechargeRow() {
             <TableCell sx={{ border: 1 }}>+91</TableCell>
             <TableCell sx={{ border: 1 }} align="right"><RechargeTextFields/></TableCell>
             <TableCell sx={{ border: 1 }} align="right"><RechargeButtons/></TableCell>
-            
+           
           </TableRow>
         </TableHead>
-        
+        <InputAdornment/>
       </Table>
     </TableContainer>
   );
