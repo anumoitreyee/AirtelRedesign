@@ -7,6 +7,7 @@ import {  CardActionArea } from '@mui/material';
 import AirtelBlackButton from './AirtelBlackButton';
 import AirtelBlack from './../Assets/AirtelBlack.jpg';
 import { makeStyles } from '@material-ui/core/styles';
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   
@@ -29,29 +30,36 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function AirtelBlackCard() {
-  const classes = useStyles()
+  const classes = useStyles();
+  const bull = <span className={classes.bullet}>•</span>;
+
   return (
     
-     <Card className={classes.root} style={{flex:1, backgroundColor:'black'}}>
+     <Card className={classes.root} style={{flex:2, backgroundColor:'black'}} variant="outlined">
          
     
       <CardActionArea>
         
         <CardContent>
-          
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <img src={AirtelBlackSmall} alt="airtel" />
+          </Grid>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <Typography  variant="h2" color="white">
-           <center> BLACK</center>
-          </Typography>
+                    <center> BLACK</center>
+          </Typography> 
           <Typography gutterBottom variant="h5" component="div" color="white">
           Enjoy first 30 days free of a new service with Airtel Black
-          </Typography>
+          </Typography></Grid>
           <AirtelBlackButton/>
-          <img src={AirtelBlack} alt="airtelblack" width="70%" height="70%"/>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <img src={AirtelBlack} alt="airtelblack" width="100%" height="100%"/>
+          </Grid>
           
         </CardContent>
       </CardActionArea>
       
     </Card>
+    
   );
 }

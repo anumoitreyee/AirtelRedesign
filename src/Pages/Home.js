@@ -18,36 +18,71 @@ import FooterButton2 from '../Components/FooterButton2';
 import FooterButton3 from '../Components/FooterButton3';
 import FooterButton4 from '../Components/FooterButton4';
 import CarouselStepper from '../Components/CarouselStepper';
-import { MdOutlineArrowUpward } from 'react-icons/md'
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
-
+const divStyle = {
+  color: '#720001',
+  fontSize: 30,
+  textDecorationLine: 'underline',
+  fontWeight: 'bold'
+};
 
 export default function Home() {
   return (
     <React.Fragment>
+        <Grid container spacing={3}>
         <Container>
           <center>
+      
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <img src={vector} alt="vector" height="100%" width="100%" />
+          </Grid>
 
         
-            
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>  
           <FullWidthTabs/>  
+          </Grid>
          
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <CarouselStepper/>
+          </Grid>
           
+          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
           <AirtelPrepaidCard/>
-          <br></br>
-          <AirtelPostpaidCard/>
-          <br></br>
-          <AirtelBlackCard/>
-          <br></br>
+          </Grid><br/>
+          
+          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+          <AirtelPostpaidCard/><br/>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <AirtelBlackCard/><br/>
+          </Grid>
+          
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <AirtelSmallCard/>
-          <br></br>
-          <p> Entertainment</p>
-          <SingleLineImageList/>
-          <AirtelThanksCard/>
+          </Grid><br/>
          
+          <div style={divStyle}>
+                    Entertainment
+        </div>
+        <br/>
+         
+
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <SingleLineImageList/>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+          <AirtelThanksCard/>
+          </Grid>
+         
+         
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
          <TextButton/>
+         </Grid>
+     
          </center>
          </Container> 
          
@@ -70,6 +105,7 @@ export default function Home() {
         </p> 
       
         </footer>
+        </Grid>
                 
     </React.Fragment>
   );

@@ -12,9 +12,11 @@ import { pink } from '@mui/material/colors';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import { Button1 } from './Button1';
 import './AppBar.css';
+import { IconContext } from 'react-icons/lib';
+import Grid from '@material-ui/core/Grid';
 
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
@@ -32,10 +34,13 @@ export default function MenuAppBar() {
       setButton(true)
     }
     
-  }
+  };
 
-  window.addEventListener('resize',
-  showButton);
+  useEffect(() => {
+   showButton();
+}, [])
+
+  window.addEventListener('resize', showButton);
 
 
 
@@ -54,6 +59,8 @@ export default function MenuAppBar() {
   };
 
   return (
+    <>
+    <IconContext.Provider value={{ color: '#E40001'}}>
     <Box sx={{ flexGrow: 2 }}>
       <FormGroup>
         
@@ -66,49 +73,49 @@ export default function MenuAppBar() {
          {click ? <FaTimes /> : <FaBars align="left"/>}</div>
          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
            <li className="nav-item">
-            <Link to='/PREPAID' className="nav-links">
+            <Link to='/PREPAID' className="nav-links" onClick={closeMobileMenu}>
             PREPAID
             </Link>        
         
            </li>
            <li className="nav-item">
-            <Link to='/DTH' className="nav-links">
+            <Link to='/DTH' className="nav-links" onClick={closeMobileMenu}>
             DTH
             </Link> 
             </li>
            <li className="nav-item">
-            <Link to='/POSTPAID' className="nav-links">
+            <Link to='/POSTPAID' className="nav-links" onClick={closeMobileMenu}>
             POSTPAID
-            </Link>                  
+             </Link>                  
 
           </li>
            <li className="nav-item">
-            <Link to='/BROADBAND' className="nav-links">
+            <Link to='/BROADBAND' className="nav-links" onClick={closeMobileMenu}>
             BROADBAND
             </Link>           
             </li>
             <li className="nav-item">
-            <Link to='/BANK' className="nav-links">
+            <Link to='/BANK' className="nav-links" onClick={closeMobileMenu}>
             BANK
             </Link>           
             </li>
             <li className="nav-item">
-            <Link to='/AIRTELBLANK' className="nav-links">
+            <Link to='/AIRTELBLANK' className="nav-links" onClick={closeMobileMenu}>
             AIRTEL BLACK
             </Link>           
             </li>
             <li className="nav-item">
-            <Link to='/HELP' className="nav-links">
+            <Link to='/HELP' className="nav-links" onClick={closeMobileMenu}>
             HELP
             </Link>           
             </li>
             <li className="nav-item">
-            <Link to='/XSTREAM' className="nav-links">
+            <Link to='/XSTREAM' className="nav-links" onClick={closeMobileMenu}>
             XSTREAM
             </Link>           
             </li>
             <li className="nav-item">
-            <Link to='/SIGNIN' className="nav-links">
+            <Link to='/SIGNIN' className="nav-links" onClick={closeMobileMenu}>
             SIGN IN
             </Link>           
             </li>
@@ -118,17 +125,17 @@ export default function MenuAppBar() {
            </ul>
 
 
+           
+           
 
-
-
-
-         
+           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}  grid-xs-12>
+              <Link to={process.env.PUBLIC_URL + '/'}>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <img src={image} alt={image} height="70px" width="200px"/>
-          </Typography>
+            <img src={image} alt={image} height="70px" width="200px" align="center"/>
+          </Typography></Link></Grid>
           {auth && (
             <div>
-              <IconButton
+              <IconButton 
                 size="large"
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
@@ -136,8 +143,10 @@ export default function MenuAppBar() {
                 onClick={handleMenu}
                 color="inherit"
                 fontSize="large"
+                position="relative"
               >
                 <PersonOutlineIcon sx={{ color: pink[700] }}  fontSize="large"/>
+                <Grid item xs={1} sm={6} md={6} lg={3} xl={2}></Grid>
               </IconButton>
               
             </div>
@@ -145,5 +154,7 @@ export default function MenuAppBar() {
         </Toolbar>
       </AppBar>
     </Box>
+    </IconContext.Provider>
+    </>
   );
 }

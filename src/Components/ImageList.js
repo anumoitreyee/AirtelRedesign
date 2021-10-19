@@ -3,14 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
 import ImageListItemBar from '@material-ui/core/ImageListItemBar';
-import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
-
 import image1 from './../Assets/loki.jpg';
 import image2 from './../Assets/rangbaaz.jpg';
 import image3 from './../Assets/rabindra.jpg';
 import image4 from './../Assets/mastani.jpg';
 import image5 from './../Assets/herapheri.jpg';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -55,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     {
     img3: image3,
      title: 'Epicon',
-    author: 'Starts from â‚¹29',
+    author: 'Starts from ₹29',
     },
    
   ];
@@ -63,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     {
     img4: image4,
      title: 'Eros now',
-    author: 'Only â‚¹39',
+    author: 'Only ₹39',
     },
    
   ];
@@ -71,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     {
     img5: image5,
      title: 'ShemarooMe',
-    author: 'Starts from â‚¹129',
+    author: 'Starts from ₹129',
     },
    
   ];
@@ -81,21 +79,18 @@ export default function SingleLineImageList() {
 
   return (
     <div className={classes.root}>
-      <ImageList className={classes.imageList} cols={2.5} rowHeight="400">
+     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+      <ImageList className={classes.imageList} cols={1.5} rowHeight="500">
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img src={item.img} alt={item.title} />
+          <ImageListItem key={item.img1}>
+            <img src={item.img1} alt={item.title} />
             <ImageListItemBar
               title={item.title}
               classes={{
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
+              
             />
           </ImageListItem>
         ))}
@@ -108,11 +103,7 @@ export default function SingleLineImageList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
+              
             />
           </ImageListItem>
         ))}
@@ -125,11 +116,7 @@ export default function SingleLineImageList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
+              
             />
           </ImageListItem>
         ))}
@@ -142,11 +129,7 @@ export default function SingleLineImageList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
+              
             />
           </ImageListItem>
         ))}
@@ -159,15 +142,12 @@ export default function SingleLineImageList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
+              
             />
           </ImageListItem>
         ))}
       </ImageList>
+      </Grid>
     </div>
   );
 }

@@ -1,49 +1,46 @@
-import * as React from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import ViewPlanContainedButton from './Button';
+import Prepaid from'./../Assets/prepaid.png'
 
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import ContainedButtons from './Button';
-import {Link, Router} from "react-router-dom";
-// eslint-disable-next-line no-unused-vars
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    maxWidth: '100%',
+    width: "100%", 
+    height: "100%"
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
+  media: {
+    height:'100%',
+    width:'100%'
   },
 });
-export default function AirtelPrepaidCard() {
+
+export default function ImgMediaCard() {
+  const classes = useStyles();
+
   return (
-    <Card>
+    <Card className={classes.root}>
       <CardActionArea href="https://anumoitreyee.github.io/AirtelRedesign/PostpaidOptions">
-      <Link to={process.env.PUBLIC_URL + '/PostpaidOptions'}>
-        <CardContent>
-          <br></br><br></br><br></br>
-          <Typography variant="body2" color="text.secondary">
-           <center> Airtel Unlimited Prepaid </center>
+        
+        <CardContent style={{ backgroundColor: '#720001' }}>
+        <CardMedia>
+        <img src={Prepaid} width= "100%" height= "100%" alt="prepaid" />
+          <ViewPlanContainedButton/>
+          </CardMedia>
+          {/* <Typography gutterBottom variant="h5" component="h2">
+            Airtel Prepaid Services
           </Typography>
-          <Typography gutterBottom variant="h5" component="div">
-           Talk Unlimited
-           <br></br>
-          </Typography>
-          <ContainedButtons/>
-          <br></br><br></br><br></br>
+          <Typography variant="body2" color="textSecondary" component="p">
+            With Airtel Unlimited Prepaid Plan
+                   Talk Unlimited!!  
+          </Typography> */}
         </CardContent>
-        </Link>
       </CardActionArea>
-      
     </Card>
   );
 }

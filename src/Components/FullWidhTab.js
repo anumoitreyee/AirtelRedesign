@@ -8,8 +8,11 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import RechargeTextFields from './RechargeTextField';
-import RechargeButtons from './RechargeButton';
+import Recharge from './RechargeButton';
 import RechargeRow from './RechargeRow';
+import { Grid } from '@material-ui/core';
+import CSSGrid from './CSSGrid';
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -66,10 +69,10 @@ export default function FullWidthTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Prepaid" {...a11yProps(0)}/>
-          <Tab label="Postpaid" {...a11yProps(1)} />
-          <Tab label="DTH" {...a11yProps(2)} />
-          <Tab label="Broadband" {...a11yProps(3)} />
+          <Tab label="Prepaid" style={{ color: '#720001' }} {...a11yProps(0)}/>
+          <Tab label="Postpaid" style={{ color: '#720001' }} {...a11yProps(1)} />
+          <Tab label="DTH" style={{ color: '#720001' }} {...a11yProps(2)} />
+          <Tab label="Broadband" style={{ color: '#720001' }} {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -77,17 +80,35 @@ export default function FullWidthTabs() {
         index={value}
         onChangeIndex={handleChangeIndex}
       >
-        <TabPanel value={value} index={0} dir={theme.direction}>
-        <RechargeRow/>
+         <TabPanel value={value} index={0} dir={theme.direction}>
+        <Grid item xs={6} sm={12} md={12} lg={12} xl={12} align='left'>
+          <CSSGrid/>
+          
+          </Grid>
+          
         </TabPanel>
+        
         <TabPanel value={value} index={1} dir={theme.direction}>
-        <RechargeRow/>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} align='left'>
+        <CSSGrid/>
+          
+          
+          </Grid>
         </TabPanel>
+
         <TabPanel value={value} index={2} dir={theme.direction}>
-        <RechargeRow/>
+        <Grid item xs={6} sm={12} md={12} lg={12} xl={12} justifyContent='left'>
+        <CSSGrid/>
+          
+          
+          </Grid>
         </TabPanel>
+
         <TabPanel value={value} index={3} dir={theme.direction}>
-        <RechargeRow/>
+        <Grid item xs={6} sm={12} md={12} lg={12} xl={12} justifyContent='left'>
+        <CSSGrid/>
+          
+          </Grid>
         </TabPanel>
       </SwipeableViews>
     </Box>
