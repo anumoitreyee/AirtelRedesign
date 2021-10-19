@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/AirtelRedesign/static/css/main.0b76ad1b.chunk.css",
-    "main.js": "/AirtelRedesign/static/js/main.6ac5acb4.chunk.js",
-    "main.js.map": "/AirtelRedesign/static/js/main.6ac5acb4.chunk.js.map",
+    "main.css": "/AirtelRedesign/static/css/main.f9e6c619.chunk.css",
+    "main.js": "/AirtelRedesign/static/js/main.2508caac.chunk.js",
+    "main.js.map": "/AirtelRedesign/static/js/main.2508caac.chunk.js.map",
     "runtime-main.js": "/AirtelRedesign/static/js/runtime-main.1b8598e0.js",
     "runtime-main.js.map": "/AirtelRedesign/static/js/runtime-main.1b8598e0.js.map",
     "static/css/2.f2512455.chunk.css": "/AirtelRedesign/static/css/2.f2512455.chunk.css",
-    "static/js/2.780c49a8.chunk.js": "/AirtelRedesign/static/js/2.780c49a8.chunk.js",
-    "static/js/2.780c49a8.chunk.js.map": "/AirtelRedesign/static/js/2.780c49a8.chunk.js.map",
+    "static/js/2.cf097886.chunk.js": "/AirtelRedesign/static/js/2.cf097886.chunk.js",
+    "static/js/2.cf097886.chunk.js.map": "/AirtelRedesign/static/js/2.cf097886.chunk.js.map",
     "index.html": "/AirtelRedesign/index.html",
     "static/css/2.f2512455.chunk.css.map": "/AirtelRedesign/static/css/2.f2512455.chunk.css.map",
-    "static/css/main.0b76ad1b.chunk.css.map": "/AirtelRedesign/static/css/main.0b76ad1b.chunk.css.map",
-    "static/js/2.780c49a8.chunk.js.LICENSE.txt": "/AirtelRedesign/static/js/2.780c49a8.chunk.js.LICENSE.txt",
+    "static/css/main.f9e6c619.chunk.css.map": "/AirtelRedesign/static/css/main.f9e6c619.chunk.css.map",
+    "static/js/2.cf097886.chunk.js.LICENSE.txt": "/AirtelRedesign/static/js/2.cf097886.chunk.js.LICENSE.txt",
     "static/media/AirtelBlack.e3567619.jpg": "/AirtelRedesign/static/media/AirtelBlack.e3567619.jpg",
     "static/media/LogoAirtel.234a3012.jpg": "/AirtelRedesign/static/media/LogoAirtel.234a3012.jpg",
     "static/media/herapheri.9ef16253.jpg": "/AirtelRedesign/static/media/herapheri.9ef16253.jpg",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.1b8598e0.js",
     "static/css/2.f2512455.chunk.css",
-    "static/js/2.780c49a8.chunk.js",
-    "static/css/main.0b76ad1b.chunk.css",
-    "static/js/main.6ac5acb4.chunk.js"
+    "static/js/2.cf097886.chunk.js",
+    "static/css/main.f9e6c619.chunk.css",
+    "static/js/main.2508caac.chunk.js"
   ]
 }
