@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 14,
     },
     pos: {
-      marginBottom: 12,
+      marginBottom: 0,
     },
   
   }));
@@ -42,7 +42,7 @@ export default function AirtelBlackCard() {
         
         <CardContent>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-          <img src={AirtelBlackSmall} alt="airtel" />
+          <img src={AirtelBlackSmall} alt="airtel" width= '10%' height= '10%'/>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <Typography  variant="h2" color="white">

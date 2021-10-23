@@ -61,7 +61,7 @@ export default function MenuAppBar() {
   return (
     <>
     <IconContext.Provider value={{ color: '#E40001'}}>
-    <Box sx={{ flexGrow: 2 }}>
+    <Box sx={{ flexGrow: 1 }}>
       <FormGroup>
         
          

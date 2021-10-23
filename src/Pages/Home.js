@@ -19,7 +19,8 @@ import FooterButton3 from '../Components/FooterButton3';
 import FooterButton4 from '../Components/FooterButton4';
 import CarouselStepper from '../Components/CarouselStepper';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
+
+import HorizontalScrollRow from '../Components/HorizontalScroll';
 
 const divStyle = {
   color: '#720001',
@@ -73,6 +74,7 @@ export default function Home() {
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <SingleLineImageList/>
           </Grid>
+          <HorizontalScrollRow/>
 
           <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
           <AirtelThanksCard/>
