@@ -1,31 +1,38 @@
 {
   "files": {
-    "main.css": "/AirtelRedesign/static/css/main.f9e6c619.chunk.css",
-    "main.js": "/AirtelRedesign/static/js/main.2508caac.chunk.js",
-    "main.js.map": "/AirtelRedesign/static/js/main.2508caac.chunk.js.map",
+    "main.css": "/AirtelRedesign/static/css/main.fd31ddd4.chunk.css",
+    "main.js": "/AirtelRedesign/static/js/main.456e8824.chunk.js",
+    "main.js.map": "/AirtelRedesign/static/js/main.456e8824.chunk.js.map",
     "runtime-main.js": "/AirtelRedesign/static/js/runtime-main.1b8598e0.js",
     "runtime-main.js.map": "/AirtelRedesign/static/js/runtime-main.1b8598e0.js.map",
     "static/css/2.f2512455.chunk.css": "/AirtelRedesign/static/css/2.f2512455.chunk.css",
-    "static/js/2.cf097886.chunk.js": "/AirtelRedesign/static/js/2.cf097886.chunk.js",
-    "static/js/2.cf097886.chunk.js.map": "/AirtelRedesign/static/js/2.cf097886.chunk.js.map",
+    "static/js/2.9c68de71.chunk.js": "/AirtelRedesign/static/js/2.9c68de71.chunk.js",
+    "static/js/2.9c68de71.chunk.js.map": "/AirtelRedesign/static/js/2.9c68de71.chunk.js.map",
     "index.html": "/AirtelRedesign/index.html",
     "static/css/2.f2512455.chunk.css.map": "/AirtelRedesign/static/css/2.f2512455.chunk.css.map",
-    "static/css/main.f9e6c619.chunk.css.map": "/AirtelRedesign/static/css/main.f9e6c619.chunk.css.map",
-    "static/js/2.cf097886.chunk.js.LICENSE.txt": "/AirtelRedesign/static/js/2.cf097886.chunk.js.LICENSE.txt",
+    "static/css/main.fd31ddd4.chunk.css.map": "/AirtelRedesign/static/css/main.fd31ddd4.chunk.css.map",
+    "static/js/2.9c68de71.chunk.js.LICENSE.txt": "/AirtelRedesign/static/js/2.9c68de71.chunk.js.LICENSE.txt",
     "static/media/AirtelBlack.e3567619.jpg": "/AirtelRedesign/static/media/AirtelBlack.e3567619.jpg",
     "static/media/LogoAirtel.234a3012.jpg": "/AirtelRedesign/static/media/LogoAirtel.234a3012.jpg",
+    "static/media/SmallCard.172d1869.png": "/AirtelRedesign/static/media/SmallCard.172d1869.png",
+    "static/media/disney.22bdbe43.png": "/AirtelRedesign/static/media/disney.22bdbe43.png",
     "static/media/herapheri.9ef16253.jpg": "/AirtelRedesign/static/media/herapheri.9ef16253.jpg",
     "static/media/loki.ee602532.jpg": "/AirtelRedesign/static/media/loki.ee602532.jpg",
     "static/media/mastani.c3f97238.jpg": "/AirtelRedesign/static/media/mastani.c3f97238.jpg",
+    "static/media/postpaid.6a865973.png": "/AirtelRedesign/static/media/postpaid.6a865973.png",
+    "static/media/prepaid.a9b0624c.png": "/AirtelRedesign/static/media/prepaid.a9b0624c.png",
     "static/media/rabindra.346295bc.jpg": "/AirtelRedesign/static/media/rabindra.346295bc.jpg",
     "static/media/rangbaaz.d504d663.jpg": "/AirtelRedesign/static/media/rangbaaz.d504d663.jpg",
-    "static/media/vector.583580a3.jpg": "/AirtelRedesign/static/media/vector.583580a3.jpg"
+    "static/media/shaw.48e59ea6.png": "/AirtelRedesign/static/media/shaw.48e59ea6.png",
+    "static/media/vector.583580a3.jpg": "/AirtelRedesign/static/media/vector.583580a3.jpg",
+    "static/media/wynx.74ebd85d.png": "/AirtelRedesign/static/media/wynx.74ebd85d.png",
+    "static/media/xstream.a9f2a6c9.png": "/AirtelRedesign/static/media/xstream.a9f2a6c9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1b8598e0.js",
     "static/css/2.f2512455.chunk.css",
-    "static/js/2.cf097886.chunk.js",
-    "static/css/main.f9e6c619.chunk.css",
-    "static/js/main.2508caac.chunk.js"
+    "static/js/2.9c68de71.chunk.js",
+    "static/css/main.fd31ddd4.chunk.css",
+    "static/js/main.456e8824.chunk.js"
   ]
 }
